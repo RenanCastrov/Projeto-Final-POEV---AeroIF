@@ -107,7 +107,7 @@ namespace AeroIF.App.Register
                 }
                 if (dataGridViewList.Columns.Contains("Name"))
                 {
-                    dataGridViewList.Columns["Name"]!.HeaderText = "Nome";
+                    dataGridViewList.Columns["Name"]!.HeaderText = "Name";
                 }
                 if (dataGridViewList.Columns.Contains("Code"))
                 {
