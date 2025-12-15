@@ -105,8 +105,8 @@ namespace AeroIF.App.Register
                 {
                     var flight = new Flight();
                     FormToObject(flight);
-                    DateTime nextDay = DateTime.Today.AddDays(1);
                     Random random = new Random();
+                    DateTime nextDay = DateTime.Today.AddDays(random.Next(0,31));
                     int randomHour = random.Next(0, 24);
                     flight.DepartTime = nextDay.AddHours(randomHour);
                     flight = _flightService.Add<Flight, Flight, FlightValidator>(flight);
