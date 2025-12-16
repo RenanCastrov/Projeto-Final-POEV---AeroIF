@@ -213,7 +213,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 483);
+            MaximizeBox = false;
             Name = "AircraftForm";
+            SizeGripStyle = SizeGripStyle.Hide;
             Text = "AircraftForm";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

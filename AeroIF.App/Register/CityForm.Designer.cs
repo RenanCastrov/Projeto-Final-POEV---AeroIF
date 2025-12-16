@@ -214,6 +214,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(721, 481);
+            MaximizeBox = false;
             Name = "CityForm";
             Text = "City Form";
             panel2.ResumeLayout(false);

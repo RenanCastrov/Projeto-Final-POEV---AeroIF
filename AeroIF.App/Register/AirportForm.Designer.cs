@@ -205,6 +205,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(737, 483);
+            MaximizeBox = false;
             Name = "AirportForm";
             Text = "Airport Form";
             panel2.ResumeLayout(false);

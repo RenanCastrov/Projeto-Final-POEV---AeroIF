@@ -266,6 +266,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(720, 482);
+            MaximizeBox = false;
             MinimumSize = new Size(720, 0);
             Name = "UserForm";
             Text = "User Form";

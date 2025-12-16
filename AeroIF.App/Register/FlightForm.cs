@@ -147,7 +147,6 @@ namespace AeroIF.App.Register
                 flights = _flightService.Get<FlightViewModel>().ToList();
                 dataGridViewList.DataSource = flights;
 
-                // Ocultar as 4 colunas de ID (Chaves estrangeiras)
                 if (dataGridViewList.Columns.Contains("PilotId"))
                 {
                     dataGridViewList.Columns["PilotId"]!.Visible = false;
@@ -165,7 +164,6 @@ namespace AeroIF.App.Register
                     dataGridViewList.Columns["ArrivalAirportId"]!.Visible = false;
                 }
 
-                // Renomear colunas para melhor UX (Manter Id, Status, e as 3 de voo)
                 if (dataGridViewList.Columns.Contains("Id"))
                 {
                     dataGridViewList.Columns["Id"]!.HeaderText = "FlightId";
@@ -204,7 +202,6 @@ namespace AeroIF.App.Register
             cmbAircraft.SelectedValue = record?.Cells["AircraftId"].Value;
             cmbPilot.SelectedValue = record?.Cells["PilotId"].Value;
 
-            // CORREÇÃO FINAL: Usando os nomes do ViewModel (Departure/Arrival)
             cmbOriginAirport.SelectedValue = record?.Cells["DepartureAirportId"].Value;
             cmbDestinyAirport.SelectedValue = record?.Cells["ArrivalAirportId"].Value;
         }
@@ -216,7 +213,6 @@ namespace AeroIF.App.Register
 
         private void TabControlRegister_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // A aba 'List' (tabPageList) é a segunda aba, que corresponde ao índice 1.
             if (this.tabControlRegister.SelectedIndex == 1)
             {
                 PopulateGrid();

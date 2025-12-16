@@ -178,6 +178,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(720, 482);
+            MaximizeBox = false;
             Name = "PilotForm";
             Text = "PilotForm";
             panel2.ResumeLayout(false);

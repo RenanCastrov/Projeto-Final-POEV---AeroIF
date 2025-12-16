@@ -113,12 +113,11 @@ namespace AeroIF.App.Register
                 {
                     dataGridViewList.Columns["Code"]!.HeaderText = "Code";
                 }
-                if (dataGridViewList.Columns.Contains("CityName")) // Se você tiver esta coluna no ViewModel
+                if (dataGridViewList.Columns.Contains("CityName"))
                 {
                     dataGridViewList.Columns["CityName"]!.HeaderText = "City";
                 }
 
-                // Ocultar a chave estrangeira
                 if (dataGridViewList.Columns.Contains("CityId"))
                 {
                     dataGridViewList.Columns["CityId"]!.Visible = false;
@@ -148,7 +147,6 @@ namespace AeroIF.App.Register
 
         private void TabControlRegister_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // A aba 'List' (tabPageList) é a segunda aba, que corresponde ao índice 1.
             if (this.tabControlRegister.SelectedIndex == 1)
             {
                 PopulateGrid();

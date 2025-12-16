@@ -89,6 +89,7 @@ namespace AeroIF.App.Register
             txtId.Text = record?.Cells["Id"].Value.ToString();
             txtName.Text = record?.Cells["Name"].Value.ToString();
             txtLogin.Text = record?.Cells["Login"].Value.ToString();
+            txtPassword.Text = record?.Cells["Password"].Value.ToString();
             txtEmail.Text = record?.Cells["Email"].Value.ToString();
             chkActive.Checked = (bool)(record?.Cells["IsActive"].Value ?? false);
         }
@@ -100,7 +101,6 @@ namespace AeroIF.App.Register
 
         private void TabControlRegister_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // A aba 'List' (tabPageList) é a segunda aba, que corresponde ao índice 1.
             if (this.tabControlRegister.SelectedIndex == 1)
             {
                 PopulateGrid();

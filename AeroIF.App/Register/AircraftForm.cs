@@ -92,7 +92,6 @@ namespace AeroIF.App.Register
 
         private void TabControlRegister_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // A aba 'List' (tabPageList) é a segunda aba, que corresponde ao índice 1.
             if (this.tabControlRegister.SelectedIndex == 1)
             {
                 PopulateGrid();

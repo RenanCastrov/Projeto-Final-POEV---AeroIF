@@ -20,14 +20,10 @@ namespace AeroIF.App
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.ColorScheme = new ColorScheme(
-                // Primary: Define a cor da Barra de Título. Use um tom de Verde (Green 700 e 800 são boas escolhas)
                 Primary.Green700,
                 Primary.Green800,
-                // LightPrimary: Tom mais claro usado em alguns elementos de fundo
                 Primary.Green500,
-                // Accent: Define a cor de destaque (botões, sliders, etc.)
                 Accent.LightGreen200,
-                // TextShade: Cor do texto (WHITE ou BLACK)
                 TextShade.WHITE
             );
             LoadLogin();
